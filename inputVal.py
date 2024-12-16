@@ -11,7 +11,7 @@ def inputInt(message_in = ''):                  #Optional message like a regular
             print('Please enter a valid int.')  #Error message, will continue loop
 
 # Check that input is a float, if it is an int conv to float and return
-def inputFloat(message_in=''):
+def inputFloat(message_in = ''):
     while True:
         try:
             val = float(input(message_in))      # Convert input to a float
@@ -25,7 +25,7 @@ def inputStr(message_in = ''):
         val = input(message_in)                 # Assign val the input str
         if val.strip():                         # True if not empty
             return val
-        else:                                   # If str in empty continue until valid input
+        else:                                   # If str is empty continue until valid input received
             print('Please enter a valid, non-empty str.')
 
 
