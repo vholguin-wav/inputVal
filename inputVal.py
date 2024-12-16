@@ -2,13 +2,13 @@
 # Vincent Holguin - Dec 2024
 
 # Check that input is an int
-def inputInt(message_in = ''):                  #Optional message like a regular input
-    while True:                                 #Loop works to perform check
+def inputInt(message_in = ''):                  # Optional message like a regular input
+    while True:                                 # Loop works to perform check
         try:
-            val = int(input(message_in))        #Convert input to an int
-            return val                          #Return val
+            val = int(input(message_in))        # Convert input to an int
+            return val                          # Return val
         except ValueError:
-            print('Please enter a valid int.')  #Error message, will continue loop
+            print('Please enter a valid int.')  # Error message, will continue loop
 
 # Check that input is a float, if it is an int conv to float and return
 def inputFloat(message_in = ''):
